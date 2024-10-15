@@ -1,15 +1,16 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "dua putri";
-const char* password = "vabio18azof";
+// Wajib, masukkan ssid dan password wifi yang digunakan dan terhubung ke Raspi
+const char* ssid = "ssid";
+const char* password = "password";
 
 // IP Server Raspi 
-const char* mqtt_server = "192.168.100.133"; 
+const char* mqtt_server = "RASPI_SERVER_IP"; 
 
 // Jika ada tambahkan
-const char* mqtt_username = "username"; // Ganti dengan username MQTT
-const char* mqtt_password = "password"; // Ganti dengan password MQTT
+const char* mqtt_username = "username"; 
+const char* mqtt_password = "password"; 
 
 // Pin untuk sensor HC-SR04
 const int trigPin = 5;
